@@ -16,8 +16,14 @@
 
 static void show_help(void)
 {
-    printf("\nUsage: %s [OPTION] gif_file [-o <output_file>]\n", PROGRAM_NAME);
-    printf("\nOptions\n");
+    printf("\nUsage:\n");
+    printf("  %s (-d | -e | -c | -i) gif_file [-o <output_file>]\n", PROGRAM_NAME);
+    printf("  %s [-i] gif_file\n", PROGRAM_NAME);
+    printf("  %s [-h]\n", PROGRAM_NAME);
+    printf("  %s -v\n", PROGRAM_NAME);
+    printf("\nOptions:\n");
+    printf("  -h                  Show this screen\n");
+    printf("  -v                  Show version\n");
     printf("  -i                  Show info about the gif file (Default)\n");
     printf("  -d[index]           Output the decoded image bytes\n");
     printf("  -e[index]           Output the lzw encoded bytes\n");
